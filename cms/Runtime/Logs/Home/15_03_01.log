@@ -1459,3 +1459,95 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002869s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005794s ]
 
+[ 2015-03-01T17:05:52+08:00 ] ::1 /0228/smallCMS/cms/index.php/Home/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000430s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005750s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\WampServer\www\0228\smallCMS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `wl_user` [ RunTime:0.008097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005151s ]
+
+[ 2015-03-01T17:05:56+08:00 ] ::1 /0228/smallCMS/cms/index.php/Home/User/checkUsername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000505s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006713s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\WampServer\www\0228\smallCMS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `wl_user` [ RunTime:0.009815s ]
+SQL: SELECT * FROM `wl_user`  [ RunTime:0.001153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005625s ]
+
+[ 2015-03-01T17:06:00+08:00 ] ::1 /0228/smallCMS/cms/index.php/Home/User/checkUsername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000833s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005057s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\WampServer\www\0228\smallCMS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `wl_user` [ RunTime:0.011734s ]
+SQL: SELECT * FROM `wl_user`  [ RunTime:0.001314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004515s ]
+
+[ 2015-03-01T17:06:04+08:00 ] ::1 /0228/smallCMS/cms/index.php/Home/User/checkUsername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000685s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005139s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\WampServer\www\0228\smallCMS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `wl_user` [ RunTime:0.009057s ]
+SQL: SELECT * FROM `wl_user`  [ RunTime:0.002066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005585s ]
+
+[ 2015-03-01T17:06:15+08:00 ] ::1 /0228/smallCMS/cms/index.php/Home/User/checkUsername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000429s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004803s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\WampServer\www\0228\smallCMS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `wl_user` [ RunTime:0.007674s ]
+SQL: SELECT * FROM `wl_user`  [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004880s ]
+
+[ 2015-03-01T17:06:20+08:00 ] ::1 /0228/smallCMS/cms/index.php/Home/User/checkUsername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006147s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\WampServer\www\0228\smallCMS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `wl_user` [ RunTime:0.028572s ]
+SQL: SELECT * FROM `wl_user`  [ RunTime:0.001378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004824s ]
+

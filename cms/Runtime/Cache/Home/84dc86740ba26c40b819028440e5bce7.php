@@ -34,7 +34,7 @@
                     var mes = xhr.responseText;
                     // 使用 eval函数将mes字串，转换成对应的对象
                     var mes_obj = eval("("+mes+")");
-                    byId("usernameInfo").innerText = mes_obj.res;
+                    byId("usernameInfo").innerHTML = mes_obj.res;
                 }
             }
         }
