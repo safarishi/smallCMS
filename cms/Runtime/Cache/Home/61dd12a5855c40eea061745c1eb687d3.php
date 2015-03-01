@@ -13,7 +13,7 @@
 
 <div class="container">
     <div id="page-head" class="clearfix">
-        <div class="pull-left"> <a href="<?php echo ($smarty["const"]["/0228/smallCMS/cms/index.php/Home/Index/index"]); ?>"><img src="<?php echo (HOME_IMG_URL); ?>logo/logo.png" style="height:80px;" alt="个人网站LOGO" /></a> </div>
+        <div class="pull-left"> <a href="<?php echo ($smarty["const"]["/0228/smallCMS/cms/index.php/Home/Index/index.html"]); ?>"><img src="<?php echo (HOME_IMG_URL); ?>logo/logo.png" style="height:80px;" alt="个人网站LOGO" /></a> </div>
         <div id="page-head-right">
             <div id="main-login" class="pull-right">
 
@@ -22,9 +22,7 @@
                     <span>注销</span>
                 </a>
                 <a href="javascript:void(0);">投稿</a>
-
                     <?php else: ?>
-
                 <a class="twi-btn-left" name="login" href="/0228/smallCMS/cms/index.php/Home/User/login">
                     <span>登录</span>
                 </a>

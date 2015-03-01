@@ -2,7 +2,7 @@
 return array(
 	//'配置项'=>'配置值'
     // 让页面显示追踪信息
-    'SHOW_PAGE_TRACE' => true,
+//    'SHOW_PAGE_TRACE' => true,
     /* 数据库连接设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  'localhost', // 服务器地址

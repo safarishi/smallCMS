@@ -7,7 +7,38 @@
     <style type="text/css">
         body { padding: 20px; }
     </style>
-    <!--<script type="text/javascript" src="{$Think.const.HOME_JS_URL}reg.js"></script>-->
+    <script type="text/javascript" src="{$Think.const.HOME_JS_URL}reg.js"></script>
+    <script type="text/javascript" src="{$Think.const.HOME_JS_URL}functions.js"></script>
+    <script>
+        var xhr;
+        function checkUserName(){
+            xhr = getXmlHttpObject(); // 1号线，获得ajax对象
+            if(xhr){ // 判断获得的ajax对象
+                // 通过post方式提交ajax请求
+                var url  = "__CONTROLLER__/checkUsername";
+                var data = "username="+byId("userName").value;
+                // 打开请求，post
+                xhr.open("post",url,true);
+                // post请求还有一句话，这句话必须的
+                xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+                // 指定回调函数，handle是函数名
+                xhr.onreadystatechange = handle;
+                // 发送请求
+                xhr.send(data); // 2号线，对应的是post ajax请求
+            }
+        }
+        // 回调函数
+        function handle(){
+            if(xhr.readyState == 4){ // 完成
+                if(xhr.status ==200){ // 成功
+                    var mes = xhr.responseText;
+                    // 使用 eval函数将mes字串，转换成对应的对象
+                    var mes_obj = eval("("+mes+")");
+                    byId("usernameInfo").innerHTML = mes_obj.res;
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -26,8 +57,8 @@
         </div>
         <div class="controls">
             <!--<input type="text" id="userName" name="username" required="required" value="" />-->
-            <input type="text" id="userName" name="username" />
-            <span class="label label-info"></span>
+            <input type="text" id="userName" name="username" required="required" onblur="checkUserName();" />
+            <span class="label label-info" id="usernameInfo"></span>
         </div>
     </div>
     <div class="control-group">

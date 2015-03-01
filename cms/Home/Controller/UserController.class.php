@@ -7,12 +7,41 @@
  */
 
 namespace Home\Controller;
+use Model\UserModel;
 use Think\Controller;
 
 class UserController extends Controller{
 
+    /**
+     * 验证用户名唯一性的ajax处理方法
+     */
+    public function checkUsername(){
+//        header('Content-type: text/html;charset=utf-8');
+        // 告诉浏览器不要缓存
+        header("Cache-Control: no-cache");
+
+        // 接受数据，这里要和请求方式对应，post还是get
+        $username = $_POST['username'];
+
+        // 获得全部的用户名操作
+        $user_model = new \Model\UserModel();
+        $names = $user_model -> getAllUserNames();
+
+        if(in_array($username,$names)){ // 判断用户注册时填写的用户名是否在已注册用户中
+            $info = '{"res":"用户名已被占用"}'; // json 格式字串
+            //    echo '用户名被占用';
+        }else{
+            $info = '{"res":"用户名未被占用，可以注册"}'; // json 格式
+            //    echo '用户名可以使用';
+        }
+        echo $info;
+    }
+
     public function demo(){
-        show_bug($_SESSION);
+        $user_model = new UserModel();
+        $info = $user_model -> getAllUserNames();
+        show_bug($info);
+//        show_bug($_SESSION);
     }
 
     /**

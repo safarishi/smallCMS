@@ -57,4 +57,18 @@ class UserModel extends Model{
             return false;
         }
     }
+
+    /**
+     * 获取网站所有注册的用户名信息
+     * @return array 存储网站所有注册的用户名
+     */
+    function getAllUserNames(){
+        $rzt = $this -> select();
+        $info =  array();
+        foreach($rzt as $_v){
+            $info[] = $_v['username'];
+        }
+        return $info;
+    }
+
 }
