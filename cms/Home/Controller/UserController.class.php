@@ -18,7 +18,7 @@ class UserController extends Controller{
     public function checkUsername(){
 //        header('Content-type: text/html;charset=utf-8');
         // 告诉浏览器不要缓存
-        header("Cache-Control: no-cache");
+//        header("Cache-Control: no-cache");
 
         // 接受数据，这里要和请求方式对应，post还是get
         $username = $_POST['username'];
